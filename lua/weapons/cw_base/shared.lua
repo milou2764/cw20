@@ -373,6 +373,7 @@ local invalidPlayerBusyProneFunction = function(self)
 end
 
 function SWEP:Initialize()
+    Log.d("SWEP:Initialize", "called for self.ClassName")
 	self:SetHoldType(self.NormalHoldType)
 	self:setupBallisticsInformation()
 	self:CalculateEffectiveRange()
